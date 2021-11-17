@@ -1,0 +1,60 @@
+body, html {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background: linear-gradient(to left, red, blue);
+    text-align: center;
+}
+
+.blog {
+    padding: 10px;
+    width: 80%;
+    height: 180vh;
+    background-color: #333;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: 10%;
+    right: 10%;
+    bottom: 10px;
+    border-radius: 14px;
+}
+
+.textfield {
+    color: white;
+    background-color: #333;
+
+}
+
+th {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ff6e48;
+}
+
+.noc {
+    color: #fff;
+}
+
+.table {
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    border-radius: 5px;
+}
+
+a {
+    color: #ff6e48;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #fff;
+}
