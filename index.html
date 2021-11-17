@@ -2,34 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <script src="server.js"></script> -->
-    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="/style/css/style.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/css/style.css" >
     <title>JavaScript Server Projekt</title>
 </head>
 <body>
-    <h1>Test - Project</h1>
-    <br>
-    <h2>Dies ist ein test project!</h2>
+
+<div class="wrapper">
+<div class="wrap">
   
-    <button class="btn">
-      <span></span>
-      <img src="style/images/school.jpg" alt="Teil-A">
+  <header>   
+    <h1 class="headline">Server Project</h1>
+  </header>
+  
+  
+  <section class="transparent">
+    <h2>Die ist ein Projekt auf Grundlage eines Basic JavaScript Servers</h2>
+    <h2>Hier befinden sich zwei Buttons, welche einmal zu einem Modernen Taschenrechner und einmal zu der Theorie der Programmiersprachen führt</h2>
+  </section> 
+  <section class="cards">
+
+    <button class="card">
+      <a href="pages/codelearn.html"><img src="style/images/code.png" alt="What are programming Languages?"></a>
     </button>
 
-    <button class="btn">
-      <span></span>
-      <img src="style/images/calculator.jpg" alt="Calculator">
+    <button class="card">
+      <a href="pages/cal.html"><img src="style/images/cal.png" alt="calculator"></a>
     </button>
-
-    <footer>
-        <h2><a href="terms.html">Datenschutz</a></h2>
-        <h3>&copy; Valentin Röhle 2021 - 2022</h3>
-        <h2><a href="impress.html">Impressum</a></h2>
-    </footer>
-
-    <script src="js/main.js"></script>
+  </section>
+  
+  
+</div>
+</div>
+  
+ <footer class="footer">
+    <div class="logo"><a href="https://www.join.de/en/"><img src="style/images/join.png" alt="Join PB"></a></div>
+    <div class="box">
+      <h1><a href="pages/term.html">Datenschutz</a></h1>
+      <h1><a href="pages/impress.html">Impressum</a></h1>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

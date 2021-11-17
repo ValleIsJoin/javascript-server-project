@@ -1,10 +1,281 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'ubuntu', sans-serif;
-    background-color: black;
-    color: orange;
-    font-size: 25px;
-    width: 100%;
+:root {
+    --clr1: #ddd;
+    --clr2: #efefef;
+    --clr3: #333;
+    --clr4: tomato;
+    --border-radius: 7px;
+    --text-radius: 50em;
+}
+
+body {
+    background: var(--clr1);
+    padding: 50px 0 0 0;
+    margin: 0 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    text-align: center;
     width: 100%;
 }
+
+body *,
+body :after,
+body :before {
+    box-sizing: border-box;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.wrap {
+    max-width: 960px;
+    min-width: 360px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap.sticky {
+    margin-top: 150px;
+    /* set height from header */
+}
+
+.fluid .wrap {
+    max-width: 100% !important;
+}
+
+header {
+    background: var(--clr1);
+    padding: 50px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    position: relative;
+    z-index: 99;
+    text-align: center;
+}
+
+.wrap.sticky header {
+    background: var(--clr2);
+    padding: 50px;
+    position: fixed;
+    top: 0px;
+    max-width: 960px;
+    width: calc(100% - 20px);
+    min-width: 360px;
+    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+}
+
+.fluid .wrap.sticky header {
+    max-width: 100% !important;
+}
+
+header .logo {
+    background: var(--clr1);
+    width: 50px;
+    height: 50px;
+    border-radius: var(--text-radius);
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50px, -50%);
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    width: 60px;
+    height: 10px;
+    background: var(--clr1);
+    border-radius: var(--text-radius);
+}
+
+section {
+    background: var(--clr2);
+    padding: 100px 50px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    position: relative;
+    margin: 10px 0 0 0;
+}
+
+section .headline {
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 260px;
+    height: 30px;
+    background: var(--clr1);
+    border-radius: var(--text-radius);
+}
+
+section .text {
+    display: block;
+    margin: 10px auto;
+    max-width: 500px;
+    height: 14px;
+    background: var(--clr1);
+    border-radius: var(--text-radius);
+}
+
+section .button {
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 120px;
+    height: 35px;
+    background: var(--clr1);
+    border-radius: var(--text-radius);
+}
+
+section.contentbox .headline {
+    margin: 10px 0 !important;
+    max-width: 65%;
+}
+
+section.contentbox .text {
+    margin: 10px 0 !important;
+    max-width: 100%;
+}
+
+section.contentbox .button {
+    margin: 10px 0 !important;
+}
+
+section.cards {
+    padding: 0px;
+    background: transparent;
+    display: table;
+    outline: none;
+}
+
+section.cards .card {
+    background: #333333;
+    width: calc(33.6% - 10px);
+    margin: 0 5px;
+    display: inline-block;
+    height: 28em;
+    outline: none;
+    border: none;
+}
+
+section.cards .card:first-child {
+    margin: 0 5px 0 0;
+    outline: none;
+}
+
+section.cards .card:last-child {
+    margin: 0 0 0 85px;
+    outline: none;
+}
+
+section.cards .card .content {
+    padding: 40px;
+    outline: none;
+}
+
+section.cards .card img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+}
+
+footer {
+    padding: 50px;
+    width: 100%;
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+    position: relative;
+    margin: 10px 0 0 0;
+}
+
+footer .logo {
+    background: var(--clr2);
+    width: 50px;
+    height: 50px;
+    border-radius: var(--text-radius);
+}
+
+
+@media (max-width: 728px) {
+    section.cards .card {
+        width: 100%;
+        display: block;
+        margin: 10px 0 0 0 !important;
+        padding: 0;
+    }
+
+    .wrapper {
+        padding: 50px 10px 100px 10px !important;
+    }
+}
+
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--clr4);
+    text-rendering: optimizelegibility;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.wrapper {
+    transform-origin: center bottom 0px;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.5);
+    background: var(--clr3);
+    padding: 50px 50px 100px 50px;
+}
+
+body.tight .wrapper {
+    transform: translateY(-60px) scale(0.9);
+    cursor: pointer;
+}
+
+.footer {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: var(--clr4);
+}
+
+.headline {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em;
+    color: var(--clr4);
+
+}
+
+.box h1{
+    padding: 20px;
+    float: right;
+
+}
+
+.box h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.box h1 a:visited {
+    text-decoration: none;
+}
+
+.box h1 a:hover {
+    text-decoration: none;
+    color: #efefef;
+}
+
+.copyh1 {
+    font-size: 1em;
+}
+
