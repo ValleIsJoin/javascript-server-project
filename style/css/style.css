@@ -2,7 +2,7 @@
     --clr1: #ddd;
     --clr2: #efefef;
     --clr3: #333;
-    --clr4: tomato;
+    --clr4: #ff6e48;
     --border-radius: 7px;
     --text-radius: 50em;
     --colors: (pulse: #ff7f82);
@@ -182,10 +182,15 @@ section.cards .card img {
 }
 
 section.cards .card img:hover {
-    display: flex;
-    z-index: 50;
+    cursor: pointer;
+    color: #fff;
 }
 
+img:hover {
+    cursor: pointer;
+    filter: 50%;
+    z-index: 50;
+}
 
 footer {
     padding: 50px;
