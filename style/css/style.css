@@ -5,6 +5,7 @@
     --clr4: tomato;
     --border-radius: 7px;
     --text-radius: 50em;
+    --colors: (pulse: #ff7f82);
 }
 
 body {
@@ -177,8 +178,14 @@ section.cards .card .content {
 section.cards .card img {
     width: 100%;
     height: auto;
-    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+    border-radius: 50%;
 }
+
+section.cards .card img:hover {
+    display: flex;
+    z-index: 50;
+}
+
 
 footer {
     padding: 50px;
@@ -279,3 +286,9 @@ h2 {
     font-size: 1em;
 }
 
+#tandc {
+    font-size: 1.5em;
+    color: var(--clr4);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
