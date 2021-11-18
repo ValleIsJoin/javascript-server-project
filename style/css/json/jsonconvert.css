@@ -1,0 +1,14 @@
+:root {
+    --clr1: #ddd;
+    --clr2: #efefef;
+    --clr3: #0c1016;
+    --clr4: #ff6e48;
+    --border-radius: 7px;
+    --text-radius: 50em;
+    --colors: (pulse: #ff7f82);
+}
+
+body, html {
+    background-color: #0c1016;
+    color: #fff;
+}
