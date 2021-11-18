@@ -1,0 +1,26 @@
+{
+    "general": {
+        "name": "Testing",
+        "summary": "We are testing something"
+    },
+    "books": [
+        {
+            "id": 1,
+            "title": "Hello World",
+            "price": 9.99,
+            "unit": "EUR"
+        },
+        {
+            "id": 11,
+            "title": "Hello Universe",
+            "price": 19.99,
+            "unit": "USD"
+        },
+        {
+            "id": 42,
+            "title": "The Hitchhiker’s Guide to the Galaxy",
+            "price": 42,
+            "unit": "Ningi"
+        }
+    ]
+}

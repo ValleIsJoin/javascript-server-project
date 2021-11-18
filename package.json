@@ -1,0 +1,28 @@
+{
+  "name": "javascriptserver",
+  "version": "1.0.0",
+  "description": "this is my own javascript server basic",
+  "main": "server.js",
+  "dependencies": {
+    "mime-types": "^2.1.34",
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValleIsJoin/javascript-server-project.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Valentin Röhle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValleIsJoin/javascript-server-project/issues"
+  },
+  "homepage": "https://github.com/ValleIsJoin/javascript-server-project#readme"
+}
